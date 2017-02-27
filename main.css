@@ -80,19 +80,3 @@ body.lose:after {
     background-repeat: none;
     background-size: cover;
 }
-body.hot:after {
-    background-image: url(http://bestanimations.com/Nature/Fire/campfire-animated-gif-8.gif);
-    background-repeat: none;
-    background-size: cover;
-}
-body.cold:after {
-    background-image: url(http://bestanimations.com/Nature/winter/winter-snow-nature-animated-gif-8.gif);
-    background-repeat: none;
-    background-size: cover;
-}
-body.lukewarm:after {
-    background-image: url(question-marks.jpg);
-}
-body.chilly:after {
-    background-image: url(question-marks.jpg);
-}

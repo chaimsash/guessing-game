@@ -102,6 +102,8 @@ $(document).ready(function() {
     $('h1').replaceWith($(orgTitle).clone());
     $('h2').replaceWith($(orgSubTitle).clone());
     $('.guess').replaceWith($(orgList).clone());
+    $('body').removeClass('win');
+    $('body').removeClass('lose');
     $('#menu-btns button:last, #submit').prop("disabled",false);
   });
   $('#menu-btns button:last').click(function(){
