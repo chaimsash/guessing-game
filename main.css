@@ -55,7 +55,7 @@
     left: 110px;
 }
 
-body:after {
+body.default:after {
     content : "";
     display: block;
     position: absolute;
@@ -68,4 +68,31 @@ body:after {
     height: 100%;
     opacity : 0.5;
     z-index: -1;
+}
+
+body.win:after {
+    background-image: url(http://bestanimations.com/Holidays/Fireworks/fireworks/ba-awesome-colorful-fireworks-animated-gif-image-s.gif);
+    background-repeat: none;
+    background-size: cover;
+}
+body.lose:after {
+    background-image: url(https://media.giphy.com/media/ARj2OMThsPoAw/giphy.gif);
+    background-repeat: none;
+    background-size: cover;
+}
+body.hot:after {
+    background-image: url(http://bestanimations.com/Nature/Fire/campfire-animated-gif-8.gif);
+    background-repeat: none;
+    background-size: cover;
+}
+body.cold:after {
+    background-image: url(http://bestanimations.com/Nature/winter/winter-snow-nature-animated-gif-8.gif);
+    background-repeat: none;
+    background-size: cover;
+}
+body.lukewarm:after {
+    background-image: url(question-marks.jpg);
+}
+body.chilly:after {
+    background-image: url(question-marks.jpg);
 }

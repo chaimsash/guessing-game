@@ -47,11 +47,13 @@ Game.prototype.checkGuess = function(guess){
   if (this.winningNumber === guess){
     $('#menu-btns button:last, #submit').prop("disabled",true);
     $('h2').text("Press the Reset button to play again!");
+    $('body').toggleClass('win');
     return 'You Win!';
   } else if (this.pastGuesses.length > 3){
     $('#menu-btns button:last, #submit').prop("disabled",true);
     $('h2').text("Press the Reset button to play again!");
-    return 'You Lose.';
+    $('body').toggleClass('lose');
+    return 'You Lose. The number was ' + game.winningNumber + '.';
   } else if (this.pastGuesses.indexOf(guess) > -1){
     return 'You have already guessed that number.';
   } else this.pastGuesses.push(guess);
